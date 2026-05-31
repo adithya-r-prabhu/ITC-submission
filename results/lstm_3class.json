@@ -1,0 +1,63 @@
+{
+  "timestamp": "2026-05-31T12:02:31.347936",
+  "task": "3class",
+  "num_classes": 3,
+  "best_val_loss": 2.204829353533293,
+  "best_val_acc": 0.1431578947368421,
+  "test": {
+    "accuracy": 0.12631578947368421,
+    "auroc": 0.684169660239383,
+    "n_samples": 475,
+    "num_classes": 3
+  },
+  "auroc_by_workload": {
+    "counting_loop": 0.6370500011794346,
+    "alu_heavy": 0.6377104595295096,
+    "branch_heavy": 0.694411101778932,
+    "mem_intensive": 0.604326411569997,
+    "irq_test": 0.6284465879244392
+  },
+  "exp_b": {
+    "holdout": "irq_test",
+    "accuracy": 0.10952380952380952,
+    "auroc": 0.6004733516992081,
+    "n_samples": 630,
+    "num_classes": 3
+  },
+  "exp_c": {
+    "auroc_mean": 0.6213755375493462,
+    "auroc_std": 0.029695615184636166,
+    "per_fold": {
+      "counting_loop": {
+        "accuracy": 0.3111111111111111,
+        "auroc": 0.6203050029970595,
+        "n_samples": 630,
+        "num_classes": 3
+      },
+      "alu_heavy": {
+        "accuracy": 0.12698412698412698,
+        "auroc": 0.635157749808477,
+        "n_samples": 630,
+        "num_classes": 3
+      },
+      "branch_heavy": {
+        "accuracy": 0.14285714285714285,
+        "auroc": 0.6600688058434878,
+        "n_samples": 630,
+        "num_classes": 3
+      },
+      "mem_intensive": {
+        "accuracy": 0.17142857142857143,
+        "auroc": 0.5692188669705668,
+        "n_samples": 630,
+        "num_classes": 3
+      },
+      "irq_test": {
+        "accuracy": 0.12380952380952381,
+        "auroc": 0.6221272621271393,
+        "n_samples": 630,
+        "num_classes": 3
+      }
+    }
+  }
+}

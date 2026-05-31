@@ -1,0 +1,170 @@
+{
+  "generated": "2026-05-31T12:05:44.123777",
+  "stuck_at_coverage": {
+    "per_workload": {
+      "counting_loop": 0.3482758620689655,
+      "alu_heavy": 0.10689655172413794,
+      "branch_heavy": 0.19137931034482758,
+      "mem_intensive": 0.3775862068965517,
+      "irq_test": 0.11379310344827587
+    },
+    "all_workloads": 0.42586206896551726,
+    "by_category": {
+      "ALU": 0.5841584158415841,
+      "Control": 0.875,
+      "Decode": 0.7307692307692307,
+      "IRQ": 0.5,
+      "Memory": 1.0,
+      "PC": 0.5625,
+      "RegFile": 0.1796875
+    },
+    "by_sa_value": {
+      "0": 0.19655172413793104,
+      "1": 0.6551724137931034
+    },
+    "note": "SA coverage = fraction of fault sites observable (trace differs from clean). Single-workload simulates one ATE test program; all-workloads is exhaustive."
+  },
+  "ml_model_coverage": {
+    "exp_a": {
+      "obs_recall": 0.8529411764705882,
+      "per_workload": {
+        "counting_loop": 0.8571428571428571,
+        "alu_heavy": 0.75,
+        "branch_heavy": 0.7142857142857143,
+        "mem_intensive": 1.0,
+        "irq_test": 0.5555555555555556
+      },
+      "per_category": {
+        "PC": NaN,
+        "ALU": NaN,
+        "Control": NaN,
+        "Memory": NaN,
+        "IRQ": NaN,
+        "Decode": NaN,
+        "RegFile": NaN
+      }
+    },
+    "exp_c_vs_sa": {
+      "random_forest": {
+        "counting_loop": {
+          "ml_auroc": 0.6879702970297029,
+          "sa_single_wl_coverage": 0.3482758620689655,
+          "ml_beats_sa": true
+        },
+        "alu_heavy": {
+          "ml_auroc": 0.7216129032258065,
+          "sa_single_wl_coverage": 0.10689655172413794,
+          "ml_beats_sa": true
+        },
+        "branch_heavy": {
+          "ml_auroc": 0.6987387387387388,
+          "sa_single_wl_coverage": 0.19137931034482758,
+          "ml_beats_sa": true
+        },
+        "mem_intensive": {
+          "ml_auroc": 0.6486301369863013,
+          "sa_single_wl_coverage": 0.3775862068965517,
+          "ml_beats_sa": true
+        },
+        "irq_test": {
+          "ml_auroc": 0.6915151515151515,
+          "sa_single_wl_coverage": 0.11379310344827587,
+          "ml_beats_sa": true
+        }
+      },
+      "xgboost": {
+        "counting_loop": {
+          "ml_auroc": 0.6927227722772277,
+          "sa_single_wl_coverage": 0.3482758620689655,
+          "ml_beats_sa": true
+        },
+        "alu_heavy": {
+          "ml_auroc": 0.7680645161290323,
+          "sa_single_wl_coverage": 0.10689655172413794,
+          "ml_beats_sa": true
+        },
+        "branch_heavy": {
+          "ml_auroc": 0.6576576576576576,
+          "sa_single_wl_coverage": 0.19137931034482758,
+          "ml_beats_sa": true
+        },
+        "mem_intensive": {
+          "ml_auroc": 0.6367123287671232,
+          "sa_single_wl_coverage": 0.3775862068965517,
+          "ml_beats_sa": true
+        },
+        "irq_test": {
+          "ml_auroc": 0.7003030303030304,
+          "sa_single_wl_coverage": 0.11379310344827587,
+          "ml_beats_sa": true
+        }
+      },
+      "logistic_regression": {
+        "counting_loop": {
+          "ml_auroc": 0.675990099009901,
+          "sa_single_wl_coverage": 0.3482758620689655,
+          "ml_beats_sa": true
+        },
+        "alu_heavy": {
+          "ml_auroc": 0.7053225806451612,
+          "sa_single_wl_coverage": 0.10689655172413794,
+          "ml_beats_sa": true
+        },
+        "branch_heavy": {
+          "ml_auroc": 0.8010810810810811,
+          "sa_single_wl_coverage": 0.19137931034482758,
+          "ml_beats_sa": true
+        },
+        "mem_intensive": {
+          "ml_auroc": 0.6357990867579909,
+          "sa_single_wl_coverage": 0.3775862068965517,
+          "ml_beats_sa": true
+        },
+        "irq_test": {
+          "ml_auroc": 0.7362121212121213,
+          "sa_single_wl_coverage": 0.11379310344827587,
+          "ml_beats_sa": true
+        }
+      },
+      "mlp": {
+        "counting_loop": {
+          "ml_auroc": 0.6746039603960395,
+          "sa_single_wl_coverage": 0.3482758620689655,
+          "ml_beats_sa": true
+        },
+        "alu_heavy": {
+          "ml_auroc": 0.7079032258064516,
+          "sa_single_wl_coverage": 0.10689655172413794,
+          "ml_beats_sa": true
+        },
+        "branch_heavy": {
+          "ml_auroc": 0.8667567567567567,
+          "sa_single_wl_coverage": 0.19137931034482758,
+          "ml_beats_sa": true
+        },
+        "mem_intensive": {
+          "ml_auroc": 0.6590867579908676,
+          "sa_single_wl_coverage": 0.3775862068965517,
+          "ml_beats_sa": true
+        },
+        "irq_test": {
+          "ml_auroc": 0.7240909090909092,
+          "sa_single_wl_coverage": 0.11379310344827587,
+          "ml_beats_sa": true
+        }
+      },
+      "summary": {
+        "best_model": "xgboost",
+        "folds_ml_beats_sa": 5,
+        "total_folds": 5
+      }
+    },
+    "note": "ML coverage = observable-class recall on held-out test set (Exp A) or LOOCV per-fold AUROC vs SA single-workload baseline (Exp C)."
+  },
+  "interpretation": {
+    "sa_gap": 0.04827586206896556,
+    "sa_gap_note": "Fraction of fault sites that require more than one workload to detect. Represents coverage gain from multi-workload ATE vs single-program testing.",
+    "ml_vs_sa_all": 0.42707910750507094,
+    "ml_vs_sa_all_note": "Positive = ML detects more observable faults than SA all-workload baseline. Negative = ML misses some faults that raw SA counting would flag."
+  }
+}

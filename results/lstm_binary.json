@@ -1,0 +1,63 @@
+{
+  "timestamp": "2026-05-31T12:02:31.347936",
+  "task": "binary",
+  "num_classes": 2,
+  "best_val_loss": 1.1270945592665336,
+  "best_val_acc": 0.6056338028169014,
+  "test": {
+    "accuracy": 0.6058394160583942,
+    "auroc": 0.7609243697478992,
+    "n_samples": 137,
+    "num_classes": 2
+  },
+  "auroc_by_workload": {
+    "counting_loop": 0.6815841584158415,
+    "alu_heavy": 0.715967741935484,
+    "branch_heavy": 0.7860360360360361,
+    "mem_intensive": 0.6470319634703197,
+    "irq_test": 0.7151515151515152
+  },
+  "exp_b": {
+    "holdout": "irq_test",
+    "accuracy": 0.6637931034482759,
+    "auroc": 0.733030303030303,
+    "n_samples": 116,
+    "num_classes": 2
+  },
+  "exp_c": {
+    "auroc_mean": 0.6875358020903188,
+    "auroc_std": 0.06505773986098774,
+    "per_fold": {
+      "counting_loop": {
+        "accuracy": 0.8015873015873016,
+        "auroc": 0.6797029702970298,
+        "n_samples": 252,
+        "num_classes": 2
+      },
+      "alu_heavy": {
+        "accuracy": 0.7053571428571429,
+        "auroc": 0.6985483870967741,
+        "n_samples": 112,
+        "num_classes": 2
+      },
+      "branch_heavy": {
+        "accuracy": 0.5527950310559007,
+        "auroc": 0.7773873873873873,
+        "n_samples": 161,
+        "num_classes": 2
+      },
+      "mem_intensive": {
+        "accuracy": 0.35315985130111527,
+        "auroc": 0.5755251141552511,
+        "n_samples": 269,
+        "num_classes": 2
+      },
+      "irq_test": {
+        "accuracy": 0.6120689655172413,
+        "auroc": 0.7065151515151515,
+        "n_samples": 116,
+        "num_classes": 2
+      }
+    }
+  }
+}

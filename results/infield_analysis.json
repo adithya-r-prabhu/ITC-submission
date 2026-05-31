@@ -1,0 +1,61 @@
+{
+  "generated": "2026-05-31T12:06:58.991456",
+  "thresholds": {
+    "max_size_kb": 100.0,
+    "max_inference_us": 1000.0,
+    "soc_clock_mhz": 50.0,
+    "obs_window_cycles": 600
+  },
+  "models": {
+    "logistic_regression": {
+      "size_kb": 5.9,
+      "n_params": 157,
+      "inference_us": 111.944,
+      "feasibility": "FEASIBLE",
+      "monitoring_overhead": {
+        "obs_window_us": 12.0,
+        "inference_us": 111.944,
+        "overhead_pct": 932.864,
+        "feasible_periodic": false
+      }
+    },
+    "random_forest": {
+      "size_kb": 3677.35,
+      "n_params": 46236,
+      "inference_us": 37064.139,
+      "feasibility": "NOT_FEASIBLE",
+      "monitoring_overhead": {
+        "obs_window_us": 12.0,
+        "inference_us": 37064.139,
+        "overhead_pct": 308867.828,
+        "feasible_periodic": false
+      }
+    },
+    "xgboost": {
+      "size_kb": 335.99,
+      "n_params": 6192,
+      "inference_us": 22177.306,
+      "feasibility": "NOT_FEASIBLE",
+      "monitoring_overhead": {
+        "obs_window_us": 12.0,
+        "inference_us": 22177.306,
+        "overhead_pct": 184810.879,
+        "feasible_periodic": false
+      }
+    },
+    "mlp": {
+      "size_kb": 867.78,
+      "n_params": 73217,
+      "inference_us": 4046.989,
+      "feasibility": "NOT_FEASIBLE",
+      "monitoring_overhead": {
+        "obs_window_us": 12.0,
+        "inference_us": 4046.989,
+        "overhead_pct": 33724.908,
+        "feasible_periodic": false
+      }
+    }
+  },
+  "recommended_infield_model": "logistic_regression",
+  "recommendation_rationale": "logistic_regression is the recommended in-field candidate: smallest serialized size among feasible models, deterministic inference, runs in 111.9 \u00b5s \u2014 932.9% overhead per observation window. Can be polled periodically via debug/PMU interface without disrupting normal operation."
+}

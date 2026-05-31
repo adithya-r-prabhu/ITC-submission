@@ -1,0 +1,39 @@
+{
+  "generated": "2026-05-31T12:05:44.813739",
+  "ground_truth": {
+    "source": "Verilator RTL fault injection on PicoRV32 RISC-V",
+    "method": "measured \u2014 compare fault trace to clean baseline trace cycle-by-cycle",
+    "total_fault_sites": 580,
+    "observable_sites": 247,
+    "silent_sites": 333,
+    "observability_rate": 0.42586206896551726
+  },
+  "held_out_test_set": {
+    "description": "Stratified random split by fault site (random_state=42)",
+    "test_sites": 88,
+    "never_seen_during_training": true,
+    "split_ensures": "proportional observable-site rate in all splits (~42.5%)"
+  },
+  "cross_workload_validation": {
+    "description": "Leave-one-workload-out CV (Exp C): train on 4 workloads, test on 1",
+    "folds": 5,
+    "most_challenging_fold": "irq_test"
+  },
+  "primary_metric": {
+    "name": "AUROC",
+    "rationale": "Handles severe class imbalance (23% observable / 77% silent). Threshold-free \u2014 does not require calibration for a deployment threshold."
+  },
+  "secondary_metrics": [
+    "recall@observable_class",
+    "f1_macro",
+    "confusion_matrix"
+  ],
+  "known_failure_modes": {
+    "irq_test_generalization": "Model AUROC drops to ~0.69 on irq_test when held out. Interrupt-driven workloads produce distinct trace signatures not captured by the four non-IRQ training workloads."
+  },
+  "coverage_summary": {
+    "sa_single_wl_best": 0.3775862068965517,
+    "sa_all_wl": 0.42586206896551726,
+    "ml_exp_a_obs_recall": 0.8529411764705882
+  }
+}

@@ -1,0 +1,1241 @@
+{
+  "timestamp": "2026-05-31T13:08:15.086793",
+  "task": "binary",
+  "top_k": [
+    20,
+    40,
+    80
+  ],
+  "methods": [
+    "rf",
+    "xgb",
+    "mutual_info"
+  ],
+  "block_layout": {
+    "window": [
+      0,
+      52
+    ],
+    "baseline": [
+      52,
+      104
+    ],
+    "delta": [
+      104,
+      156
+    ]
+  },
+  "rankings": {
+    "rf": {
+      "top_feature_names": [
+        "opcode_alu_std_delta",
+        "opcode_alu_std_window",
+        "if_active_std_delta",
+        "if_active_std_window",
+        "if_active_mean_delta",
+        "opcode_alu_nonzero_frac_delta",
+        "opcode_alu_mean_delta",
+        "opcode_alu_nonzero_frac_window",
+        "if_active_nonzero_frac_delta",
+        "if_active_nonzero_frac_window",
+        "branch_taken_nonzero_frac_delta",
+        "branch_taken_std_window",
+        "branch_taken_mean_window",
+        "branch_taken_mean_delta",
+        "opcode_alu_mean_window",
+        "branch_taken_nonzero_frac_window",
+        "if_active_mean_window",
+        "branch_taken_std_delta",
+        "if_active_std_baseline",
+        "mem_active_max_window",
+        "mem_active_mean_delta",
+        "opcode_alu_nonzero_frac_baseline",
+        "opcode_alu_std_baseline",
+        "mem_active_nonzero_frac_window",
+        "opcode_alu_mean_baseline",
+        "mem_active_mean_window",
+        "mem_active_nonzero_frac_delta",
+        "mem_active_mean_baseline",
+        "mem_active_std_window",
+        "mem_active_std_baseline",
+        "if_active_mean_baseline",
+        "opcode_branch_std_delta",
+        "if_active_nonzero_frac_baseline",
+        "opcode_branch_nonzero_frac_delta",
+        "opcode_branch_mean_delta",
+        "mem_active_std_delta",
+        "mem_write_std_delta",
+        "opcode_load_nonzero_frac_window",
+        "mem_active_nonzero_frac_baseline",
+        "opcode_store_std_delta",
+        "opcode_load_std_window",
+        "branch_taken_nonzero_frac_baseline",
+        "branch_taken_mean_baseline",
+        "branch_taken_std_baseline",
+        "mem_active_max_baseline",
+        "opcode_store_mean_delta",
+        "opcode_load_std_delta",
+        "mem_write_nonzero_frac_delta",
+        "opcode_branch_mean_window",
+        "opcode_load_mean_delta",
+        "mem_write_mean_delta",
+        "opcode_load_mean_window",
+        "opcode_branch_nonzero_frac_window",
+        "opcode_branch_std_window",
+        "mem_read_std_baseline",
+        "opcode_load_std_baseline",
+        "mem_read_std_window",
+        "mem_read_std_delta",
+        "opcode_store_nonzero_frac_delta",
+        "mem_read_mean_baseline",
+        "mem_read_nonzero_frac_delta",
+        "opcode_branch_mean_baseline",
+        "opcode_load_nonzero_frac_delta",
+        "opcode_store_std_baseline",
+        "opcode_alu_max_window",
+        "mem_read_mean_window",
+        "mem_read_mean_delta",
+        "opcode_store_nonzero_frac_window",
+        "mem_write_std_baseline",
+        "mem_read_nonzero_frac_window",
+        "opcode_store_std_window",
+        "opcode_load_max_window",
+        "opcode_load_mean_baseline",
+        "mem_write_mean_baseline",
+        "mem_write_nonzero_frac_baseline",
+        "opcode_load_nonzero_frac_baseline",
+        "mem_write_mean_window",
+        "opcode_store_mean_baseline",
+        "opcode_branch_std_baseline",
+        "opcode_branch_nonzero_frac_baseline"
+      ],
+      "top_feature_indices": [
+        124,
+        20,
+        117,
+        13,
+        104,
+        150,
+        111,
+        46,
+        143,
+        39,
+        149,
+        19,
+        6,
+        110,
+        7,
+        45,
+        0,
+        123,
+        65,
+        27,
+        105,
+        98,
+        72,
+        40,
+        59,
+        1,
+        144,
+        53,
+        14,
+        66,
+        52,
+        125,
+        91,
+        151,
+        112,
+        118,
+        120,
+        48,
+        92,
+        127,
+        22,
+        97,
+        58,
+        71,
+        79,
+        114,
+        126,
+        146,
+        8,
+        113,
+        107,
+        9,
+        47,
+        21,
+        67,
+        74,
+        15,
+        119,
+        153,
+        54,
+        145,
+        60,
+        152,
+        75,
+        33,
+        2,
+        106,
+        49,
+        68,
+        41,
+        23,
+        35,
+        61,
+        55,
+        94,
+        100,
+        3,
+        62,
+        73,
+        99
+      ]
+    },
+    "xgb": {
+      "top_feature_names": [
+        "mem_active_mean_baseline",
+        "opcode_alu_std_delta",
+        "opcode_branch_mean_delta",
+        "mem_active_std_delta",
+        "opcode_alu_mean_window",
+        "branch_taken_mean_delta",
+        "if_active_mean_window",
+        "branch_taken_mean_window",
+        "opcode_store_std_delta",
+        "if_active_std_delta",
+        "mem_write_std_delta",
+        "opcode_alu_mean_baseline",
+        "opcode_branch_mean_window",
+        "opcode_alu_std_baseline",
+        "mem_read_mean_delta",
+        "opcode_branch_mean_baseline",
+        "opcode_alu_std_window",
+        "if_active_std_baseline",
+        "opcode_load_mean_delta",
+        "mem_read_mean_window",
+        "opcode_alu_mean_delta",
+        "if_active_std_window",
+        "if_active_mean_baseline",
+        "mem_active_mean_window",
+        "if_active_mean_delta",
+        "mem_read_std_delta",
+        "mem_read_mean_baseline",
+        "branch_taken_std_delta",
+        "opcode_load_mean_window",
+        "branch_taken_std_window",
+        "opcode_store_mean_window",
+        "branch_taken_mean_baseline",
+        "opcode_load_std_delta",
+        "opcode_store_std_window",
+        "opcode_load_std_window",
+        "branch_taken_std_baseline",
+        "opcode_load_mean_baseline",
+        "mem_write_mean_baseline",
+        "opcode_store_mean_delta",
+        "mem_write_std_window",
+        "branch_taken_max_delta",
+        "mem_write_mean_window",
+        "mem_active_mean_delta",
+        "mem_write_mean_delta",
+        "opcode_store_mean_baseline",
+        "mem_read_std_window",
+        "pmp_region_nonzero_frac_window",
+        "branch_taken_nonzero_frac_window",
+        "opcode_alu_nonzero_frac_window",
+        "opcode_branch_nonzero_frac_window",
+        "opcode_load_nonzero_frac_window",
+        "opcode_store_nonzero_frac_window",
+        "illegal_instr_nonzero_frac_window",
+        "mem_stall_mean_window",
+        "pmp_region_mean_baseline",
+        "pipeline_stall_mean_window",
+        "illegal_instr_mean_baseline",
+        "pipeline_stall_mean_baseline",
+        "mem_stall_mean_baseline",
+        "pipeline_stall_nonzero_frac_window",
+        "mem_stall_nonzero_frac_window",
+        "opcode_load_max_window",
+        "mem_write_nonzero_frac_window",
+        "mem_read_nonzero_frac_window",
+        "opcode_branch_std_window",
+        "illegal_instr_std_window",
+        "pmp_region_std_window",
+        "if_active_max_window",
+        "pipeline_stall_std_window",
+        "mem_active_max_window",
+        "mem_read_max_window",
+        "mem_active_std_window",
+        "mem_write_max_window",
+        "pipeline_stall_max_window",
+        "pmp_region_mean_window",
+        "mem_read_std_baseline",
+        "illegal_instr_mean_window",
+        "mem_stall_max_window",
+        "branch_taken_max_window",
+        "opcode_alu_max_window"
+      ],
+      "top_feature_indices": [
+        53,
+        124,
+        112,
+        118,
+        7,
+        110,
+        0,
+        6,
+        127,
+        117,
+        120,
+        59,
+        8,
+        72,
+        106,
+        60,
+        20,
+        65,
+        113,
+        2,
+        111,
+        13,
+        52,
+        1,
+        104,
+        119,
+        54,
+        123,
+        9,
+        19,
+        10,
+        58,
+        126,
+        23,
+        22,
+        71,
+        61,
+        55,
+        114,
+        16,
+        136,
+        3,
+        105,
+        107,
+        62,
+        15,
+        51,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        5,
+        64,
+        4,
+        63,
+        56,
+        57,
+        43,
+        44,
+        35,
+        42,
+        41,
+        21,
+        24,
+        25,
+        26,
+        17,
+        27,
+        28,
+        14,
+        29,
+        30,
+        12,
+        67,
+        11,
+        31,
+        32,
+        33
+      ]
+    },
+    "mutual_info": {
+      "top_feature_names": [
+        "opcode_alu_std_window",
+        "opcode_alu_nonzero_frac_window",
+        "opcode_alu_mean_window",
+        "opcode_alu_mean_delta",
+        "opcode_alu_nonzero_frac_delta",
+        "if_active_mean_window",
+        "if_active_std_window",
+        "if_active_nonzero_frac_delta",
+        "if_active_std_delta",
+        "if_active_nonzero_frac_window",
+        "branch_taken_std_delta",
+        "if_active_mean_delta",
+        "opcode_alu_std_delta",
+        "mem_active_std_baseline",
+        "mem_active_std_delta",
+        "branch_taken_nonzero_frac_delta",
+        "opcode_alu_max_delta",
+        "mem_active_max_baseline",
+        "opcode_load_std_delta",
+        "mem_active_nonzero_frac_delta",
+        "opcode_load_max_baseline",
+        "branch_taken_nonzero_frac_window",
+        "mem_write_max_baseline",
+        "mem_write_mean_window",
+        "opcode_load_mean_delta",
+        "pmp_region_std_window",
+        "mem_active_mean_delta",
+        "mem_write_nonzero_frac_delta",
+        "opcode_branch_nonzero_frac_window",
+        "mem_write_nonzero_frac_baseline",
+        "branch_taken_std_window",
+        "branch_taken_mean_baseline",
+        "mem_read_nonzero_frac_delta",
+        "mem_active_nonzero_frac_window",
+        "opcode_alu_max_window",
+        "branch_taken_mean_window",
+        "branch_taken_max_delta",
+        "opcode_store_nonzero_frac_delta",
+        "mem_read_nonzero_frac_window",
+        "mem_read_std_window",
+        "mem_stall_max_window",
+        "branch_taken_mean_delta",
+        "opcode_store_nonzero_frac_baseline",
+        "mem_write_max_delta",
+        "opcode_store_std_delta",
+        "opcode_branch_mean_delta",
+        "opcode_alu_std_baseline",
+        "mem_active_nonzero_frac_baseline",
+        "opcode_branch_std_baseline",
+        "pmp_region_nonzero_frac_baseline",
+        "branch_taken_max_window",
+        "branch_taken_std_baseline",
+        "illegal_instr_max_window",
+        "opcode_branch_mean_window",
+        "opcode_store_max_delta",
+        "opcode_store_max_baseline",
+        "mem_write_std_baseline",
+        "mem_write_std_delta",
+        "if_active_mean_baseline",
+        "opcode_branch_nonzero_frac_delta",
+        "opcode_store_nonzero_frac_window",
+        "mem_active_mean_window",
+        "mem_read_mean_baseline",
+        "opcode_store_mean_window",
+        "opcode_load_std_window",
+        "mem_read_mean_delta",
+        "pmp_region_nonzero_frac_window",
+        "if_active_max_window",
+        "mem_read_max_delta",
+        "opcode_store_std_baseline",
+        "opcode_load_mean_baseline",
+        "pipeline_stall_std_window",
+        "opcode_load_nonzero_frac_delta",
+        "opcode_branch_std_window",
+        "opcode_store_mean_delta",
+        "mem_read_std_delta",
+        "if_active_max_delta",
+        "mem_stall_max_delta",
+        "illegal_instr_mean_baseline",
+        "mem_active_max_delta"
+      ],
+      "top_feature_indices": [
+        20,
+        46,
+        7,
+        111,
+        150,
+        0,
+        13,
+        143,
+        117,
+        39,
+        123,
+        104,
+        124,
+        66,
+        118,
+        149,
+        137,
+        79,
+        126,
+        144,
+        87,
+        45,
+        81,
+        3,
+        113,
+        25,
+        105,
+        146,
+        47,
+        94,
+        19,
+        58,
+        145,
+        40,
+        33,
+        6,
+        136,
+        153,
+        41,
+        15,
+        31,
+        110,
+        101,
+        133,
+        127,
+        112,
+        72,
+        92,
+        73,
+        103,
+        32,
+        71,
+        37,
+        8,
+        140,
+        88,
+        68,
+        120,
+        52,
+        151,
+        49,
+        1,
+        54,
+        10,
+        22,
+        106,
+        51,
+        26,
+        132,
+        75,
+        61,
+        17,
+        152,
+        21,
+        114,
+        119,
+        130,
+        135,
+        63,
+        131
+      ]
+    }
+  },
+  "full_156": {
+    "exp_a": {
+      "random_forest": {
+        "auroc": 0.8095238095238095,
+        "f1_macro": 0.6844693432928727
+      },
+      "xgboost": {
+        "auroc": 0.7725490196078432,
+        "f1_macro": 0.6870359794403198
+      },
+      "logistic_regression": {
+        "auroc": 0.7914565826330532,
+        "f1_macro": 0.6505102040816326
+      },
+      "mlp": {
+        "auroc": 0.8127450980392158,
+        "f1_macro": 0.719123365146695
+      }
+    },
+    "exp_c": {
+      "random_forest": {
+        "auroc_mean": 0.6896934454991401,
+        "auroc_std": 0.023635364481352287,
+        "per_fold": {
+          "counting_loop": 0.6879702970297029,
+          "alu_heavy": 0.7216129032258065,
+          "branch_heavy": 0.6987387387387388,
+          "mem_intensive": 0.6486301369863013,
+          "irq_test": 0.6915151515151515
+        }
+      },
+      "xgboost": {
+        "auroc_mean": 0.6910920610268143,
+        "auroc_std": 0.044916087603306995,
+        "per_fold": {
+          "counting_loop": 0.6927227722772277,
+          "alu_heavy": 0.7680645161290323,
+          "branch_heavy": 0.6576576576576576,
+          "mem_intensive": 0.6367123287671232,
+          "irq_test": 0.7003030303030304
+        }
+      },
+      "logistic_regression": {
+        "auroc_mean": 0.7108809937412512,
+        "auroc_std": 0.05597014386724821,
+        "per_fold": {
+          "counting_loop": 0.675990099009901,
+          "alu_heavy": 0.7053225806451612,
+          "branch_heavy": 0.8010810810810811,
+          "mem_intensive": 0.6357990867579909,
+          "irq_test": 0.7362121212121213
+        }
+      },
+      "mlp": {
+        "auroc_mean": 0.7264883220082049,
+        "auroc_std": 0.07383948129316502,
+        "per_fold": {
+          "counting_loop": 0.6746039603960395,
+          "alu_heavy": 0.7079032258064516,
+          "branch_heavy": 0.8667567567567567,
+          "mem_intensive": 0.6590867579908676,
+          "irq_test": 0.7240909090909092
+        }
+      }
+    }
+  },
+  "sweep": {
+    "rf": {
+      "20": {
+        "block_composition": {
+          "window": 10,
+          "baseline": 1,
+          "delta": 9
+        },
+        "exp_a": {
+          "random_forest": {
+            "auroc": 0.7789915966386555,
+            "f1_macro": 0.6652003910068426
+          },
+          "xgboost": {
+            "auroc": 0.7739495798319328,
+            "f1_macro": 0.6672064777327935
+          },
+          "logistic_regression": {
+            "auroc": 0.7792717086834734,
+            "f1_macro": 0.6441558441558441
+          },
+          "mlp": {
+            "auroc": 0.7768907563025209,
+            "f1_macro": 0.6738095238095239
+          }
+        },
+        "exp_c": {
+          "random_forest": {
+            "auroc_mean": 0.684202295839573,
+            "auroc_std": 0.06826679180522778,
+            "per_fold": {
+              "counting_loop": 0.6726732673267326,
+              "alu_heavy": 0.8143548387096773,
+              "branch_heavy": 0.6598198198198197,
+              "mem_intensive": 0.612648401826484,
+              "irq_test": 0.6615151515151515
+            }
+          },
+          "xgboost": {
+            "auroc_mean": 0.690616791500841,
+            "auroc_std": 0.05320634689316159,
+            "per_fold": {
+              "counting_loop": 0.6883168316831683,
+              "alu_heavy": 0.7879032258064514,
+              "branch_heavy": 0.6571171171171172,
+              "mem_intensive": 0.630958904109589,
+              "irq_test": 0.6887878787878787
+            }
+          },
+          "logistic_regression": {
+            "auroc_mean": 0.7273296186959466,
+            "auroc_std": 0.04992757332508401,
+            "per_fold": {
+              "counting_loop": 0.6799999999999999,
+              "alu_heavy": 0.7430645161290322,
+              "branch_heavy": 0.8061261261261262,
+              "mem_intensive": 0.6673059360730593,
+              "irq_test": 0.7401515151515152
+            }
+          },
+          "mlp": {
+            "auroc_mean": 0.7280891064241082,
+            "auroc_std": 0.05740915818986133,
+            "per_fold": {
+              "counting_loop": 0.6937128712871288,
+              "alu_heavy": 0.7140322580645162,
+              "branch_heavy": 0.8375675675675676,
+              "mem_intensive": 0.6725570776255707,
+              "irq_test": 0.7225757575757575
+            }
+          }
+        }
+      },
+      "40": {
+        "block_composition": {
+          "window": 14,
+          "baseline": 9,
+          "delta": 17
+        },
+        "exp_a": {
+          "random_forest": {
+            "auroc": 0.7894957983193277,
+            "f1_macro": 0.6802497949914843
+          },
+          "xgboost": {
+            "auroc": 0.7729691876750701,
+            "f1_macro": 0.6603685092127303
+          },
+          "logistic_regression": {
+            "auroc": 0.7845938375350141,
+            "f1_macro": 0.6028985507246376
+          },
+          "mlp": {
+            "auroc": 0.7915966386554623,
+            "f1_macro": 0.7065962307252998
+          }
+        },
+        "exp_c": {
+          "random_forest": {
+            "auroc_mean": 0.6767688092333376,
+            "auroc_std": 0.02889199582989528,
+            "per_fold": {
+              "counting_loop": 0.6932178217821782,
+              "alu_heavy": 0.7190322580645161,
+              "branch_heavy": 0.6762162162162162,
+              "mem_intensive": 0.6331050228310503,
+              "irq_test": 0.6622727272727272
+            }
+          },
+          "xgboost": {
+            "auroc_mean": 0.6958833213700799,
+            "auroc_std": 0.05263178132253321,
+            "per_fold": {
+              "counting_loop": 0.6927722772277228,
+              "alu_heavy": 0.7961290322580645,
+              "branch_heavy": 0.6578378378378378,
+              "mem_intensive": 0.6490410958904109,
+              "irq_test": 0.6836363636363637
+            }
+          },
+          "logistic_regression": {
+            "auroc_mean": 0.7223601753960255,
+            "auroc_std": 0.05699344585462096,
+            "per_fold": {
+              "counting_loop": 0.6652970297029703,
+              "alu_heavy": 0.7446774193548386,
+              "branch_heavy": 0.8095495495495495,
+              "mem_intensive": 0.6542465753424658,
+              "irq_test": 0.738030303030303
+            }
+          },
+          "mlp": {
+            "auroc_mean": 0.7015191710665256,
+            "auroc_std": 0.06809502205525099,
+            "per_fold": {
+              "counting_loop": 0.593069306930693,
+              "alu_heavy": 0.7043548387096774,
+              "branch_heavy": 0.8021621621621622,
+              "mem_intensive": 0.6787671232876712,
+              "irq_test": 0.7292424242424242
+            }
+          }
+        }
+      },
+      "80": {
+        "block_composition": {
+          "window": 27,
+          "baseline": 26,
+          "delta": 27
+        },
+        "exp_a": {
+          "random_forest": {
+            "auroc": 0.8030812324929972,
+            "f1_macro": 0.6844693432928727
+          },
+          "xgboost": {
+            "auroc": 0.7778711484593838,
+            "f1_macro": 0.6738095238095239
+          },
+          "logistic_regression": {
+            "auroc": 0.7830532212885154,
+            "f1_macro": 0.6280542986425339
+          },
+          "mlp": {
+            "auroc": 0.8053221288515406,
+            "f1_macro": 0.6806526806526807
+          }
+        },
+        "exp_c": {
+          "random_forest": {
+            "auroc_mean": 0.6807569607016236,
+            "auroc_std": 0.029576963410502494,
+            "per_fold": {
+              "counting_loop": 0.6867821782178218,
+              "alu_heavy": 0.73,
+              "branch_heavy": 0.681081081081081,
+              "mem_intensive": 0.639406392694064,
+              "irq_test": 0.6665151515151515
+            }
+          },
+          "xgboost": {
+            "auroc_mean": 0.6918680795155508,
+            "auroc_std": 0.05135777963100847,
+            "per_fold": {
+              "counting_loop": 0.6932178217821782,
+              "alu_heavy": 0.7841935483870968,
+              "branch_heavy": 0.6500900900900901,
+              "mem_intensive": 0.6378995433789953,
+              "irq_test": 0.6939393939393939
+            }
+          },
+          "logistic_regression": {
+            "auroc_mean": 0.7133460539697901,
+            "auroc_std": 0.05676782527922953,
+            "per_fold": {
+              "counting_loop": 0.6761881188118812,
+              "alu_heavy": 0.7091935483870968,
+              "branch_heavy": 0.8059459459459459,
+              "mem_intensive": 0.6385844748858447,
+              "irq_test": 0.7368181818181818
+            }
+          },
+          "mlp": {
+            "auroc_mean": 0.7198866378928682,
+            "auroc_std": 0.05955548398574222,
+            "per_fold": {
+              "counting_loop": 0.682920792079208,
+              "alu_heavy": 0.6980645161290322,
+              "branch_heavy": 0.8264864864864865,
+              "mem_intensive": 0.6548401826484018,
+              "irq_test": 0.7371212121212122
+            }
+          }
+        }
+      }
+    },
+    "xgb": {
+      "20": {
+        "block_composition": {
+          "window": 6,
+          "baseline": 5,
+          "delta": 9
+        },
+        "exp_a": {
+          "random_forest": {
+            "auroc": 0.8042016806722689,
+            "f1_macro": 0.6998711340206185
+          },
+          "xgboost": {
+            "auroc": 0.77703081232493,
+            "f1_macro": 0.6929971988795518
+          },
+          "logistic_regression": {
+            "auroc": 0.7736694677871148,
+            "f1_macro": 0.63148858238425
+          },
+          "mlp": {
+            "auroc": 0.7747899159663866,
+            "f1_macro": 0.7065962307252998
+          }
+        },
+        "exp_c": {
+          "random_forest": {
+            "auroc_mean": 0.6892020921849503,
+            "auroc_std": 0.03090582382921668,
+            "per_fold": {
+              "counting_loop": 0.6916336633663366,
+              "alu_heavy": 0.7383870967741936,
+              "branch_heavy": 0.6706306306306307,
+              "mem_intensive": 0.6456621004566209,
+              "irq_test": 0.6996969696969697
+            }
+          },
+          "xgboost": {
+            "auroc_mean": 0.6946060778809605,
+            "auroc_std": 0.045533627261119876,
+            "per_fold": {
+              "counting_loop": 0.6997524752475247,
+              "alu_heavy": 0.7712903225806452,
+              "branch_heavy": 0.6603603603603604,
+              "mem_intensive": 0.6379908675799087,
+              "irq_test": 0.7036363636363637
+            }
+          },
+          "logistic_regression": {
+            "auroc_mean": 0.7260716932891651,
+            "auroc_std": 0.05386638591194827,
+            "per_fold": {
+              "counting_loop": 0.6860891089108911,
+              "alu_heavy": 0.7375806451612903,
+              "branch_heavy": 0.8136936936936937,
+              "mem_intensive": 0.6555707762557077,
+              "irq_test": 0.7374242424242425
+            }
+          },
+          "mlp": {
+            "auroc_mean": 0.7188826246050338,
+            "auroc_std": 0.05006555146683437,
+            "per_fold": {
+              "counting_loop": 0.674950495049505,
+              "alu_heavy": 0.7296774193548388,
+              "branch_heavy": 0.7985585585585585,
+              "mem_intensive": 0.6565296803652968,
+              "irq_test": 0.7346969696969697
+            }
+          }
+        }
+      },
+      "40": {
+        "block_composition": {
+          "window": 14,
+          "baseline": 11,
+          "delta": 15
+        },
+        "exp_a": {
+          "random_forest": {
+            "auroc": 0.8067226890756303,
+            "f1_macro": 0.6844693432928727
+          },
+          "xgboost": {
+            "auroc": 0.7787114845938375,
+            "f1_macro": 0.6870359794403198
+          },
+          "logistic_regression": {
+            "auroc": 0.7795518207282913,
+            "f1_macro": 0.6028985507246376
+          },
+          "mlp": {
+            "auroc": 0.776890756302521,
+            "f1_macro": 0.7065962307252998
+          }
+        },
+        "exp_c": {
+          "random_forest": {
+            "auroc_mean": 0.6766149983583469,
+            "auroc_std": 0.04110483093535109,
+            "per_fold": {
+              "counting_loop": 0.7008415841584159,
+              "alu_heavy": 0.7412903225806452,
+              "branch_heavy": 0.672972972972973,
+              "mem_intensive": 0.6300913242009132,
+              "irq_test": 0.6378787878787879
+            }
+          },
+          "xgboost": {
+            "auroc_mean": 0.6893965410920473,
+            "auroc_std": 0.050961758963283615,
+            "per_fold": {
+              "counting_loop": 0.6944554455445544,
+              "alu_heavy": 0.779032258064516,
+              "branch_heavy": 0.6448648648648649,
+              "mem_intensive": 0.6352968036529679,
+              "irq_test": 0.6933333333333334
+            }
+          },
+          "logistic_regression": {
+            "auroc_mean": 0.7109347107287193,
+            "auroc_std": 0.054634743365833106,
+            "per_fold": {
+              "counting_loop": 0.6673267326732673,
+              "alu_heavy": 0.721774193548387,
+              "branch_heavy": 0.7915315315315316,
+              "mem_intensive": 0.6357077625570776,
+              "irq_test": 0.7383333333333334
+            }
+          },
+          "mlp": {
+            "auroc_mean": 0.7010244360321188,
+            "auroc_std": 0.06785420613190929,
+            "per_fold": {
+              "counting_loop": 0.6158910891089109,
+              "alu_heavy": 0.6743548387096774,
+              "branch_heavy": 0.8129729729729731,
+              "mem_intensive": 0.6653881278538811,
+              "irq_test": 0.7365151515151515
+            }
+          }
+        }
+      },
+      "80": {
+        "block_composition": {
+          "window": 45,
+          "baseline": 17,
+          "delta": 18
+        },
+        "exp_a": {
+          "random_forest": {
+            "auroc": 0.8173669467787116,
+            "f1_macro": 0.7065238558909446
+          },
+          "xgboost": {
+            "auroc": 0.77703081232493,
+            "f1_macro": 0.6870359794403198
+          },
+          "logistic_regression": {
+            "auroc": 0.7893557422969187,
+            "f1_macro": 0.643552036199095
+          },
+          "mlp": {
+            "auroc": 0.7816526610644259,
+            "f1_macro": 0.719123365146695
+          }
+        },
+        "exp_c": {
+          "random_forest": {
+            "auroc_mean": 0.6873419088251279,
+            "auroc_std": 0.027294830484419278,
+            "per_fold": {
+              "counting_loop": 0.6869801980198019,
+              "alu_heavy": 0.723225806451613,
+              "branch_heavy": 0.7034234234234235,
+              "mem_intensive": 0.6409589041095891,
+              "irq_test": 0.6821212121212121
+            }
+          },
+          "xgboost": {
+            "auroc_mean": 0.6924468540284179,
+            "auroc_std": 0.0471838530714009,
+            "per_fold": {
+              "counting_loop": 0.6913366336633663,
+              "alu_heavy": 0.7761290322580645,
+              "branch_heavy": 0.6452252252252253,
+              "mem_intensive": 0.6495433789954338,
+              "irq_test": 0.7
+            }
+          },
+          "logistic_regression": {
+            "auroc_mean": 0.7157253141635478,
+            "auroc_std": 0.052660685998284884,
+            "per_fold": {
+              "counting_loop": 0.6778217821782179,
+              "alu_heavy": 0.7079032258064516,
+              "branch_heavy": 0.8028828828828829,
+              "mem_intensive": 0.6507762557077624,
+              "irq_test": 0.7392424242424243
+            }
+          },
+          "mlp": {
+            "auroc_mean": 0.7245702881797657,
+            "auroc_std": 0.06737690018455947,
+            "per_fold": {
+              "counting_loop": 0.6848019801980199,
+              "alu_heavy": 0.6953225806451613,
+              "branch_heavy": 0.8435135135135136,
+              "mem_intensive": 0.6502739726027397,
+              "irq_test": 0.7489393939393939
+            }
+          }
+        }
+      }
+    },
+    "mutual_info": {
+      "20": {
+        "block_composition": {
+          "window": 6,
+          "baseline": 2,
+          "delta": 12
+        },
+        "exp_a": {
+          "random_forest": {
+            "auroc": 0.7624649859943978,
+            "f1_macro": 0.662966000126159
+          },
+          "xgboost": {
+            "auroc": 0.7504201680672269,
+            "f1_macro": 0.6797304730473047
+          },
+          "logistic_regression": {
+            "auroc": 0.7666666666666667,
+            "f1_macro": 0.6095531235750113
+          },
+          "mlp": {
+            "auroc": 0.7701680672268908,
+            "f1_macro": 0.6870359794403198
+          }
+        },
+        "exp_c": {
+          "random_forest": {
+            "auroc_mean": 0.688859858268494,
+            "auroc_std": 0.026883502304302396,
+            "per_fold": {
+              "counting_loop": 0.6994059405940595,
+              "alu_heavy": 0.7261290322580645,
+              "branch_heavy": 0.6908108108108109,
+              "mem_intensive": 0.6431050228310503,
+              "irq_test": 0.6848484848484848
+            }
+          },
+          "xgboost": {
+            "auroc_mean": 0.6767111645048013,
+            "auroc_std": 0.03171110965786269,
+            "per_fold": {
+              "counting_loop": 0.695,
+              "alu_heavy": 0.7145161290322581,
+              "branch_heavy": 0.6454054054054054,
+              "mem_intensive": 0.6328767123287671,
+              "irq_test": 0.6957575757575757
+            }
+          },
+          "logistic_regression": {
+            "auroc_mean": 0.7169141889968575,
+            "auroc_std": 0.05383407404089944,
+            "per_fold": {
+              "counting_loop": 0.6613366336633663,
+              "alu_heavy": 0.7504838709677418,
+              "branch_heavy": 0.796036036036036,
+              "mem_intensive": 0.6538356164383561,
+              "irq_test": 0.722878787878788
+            }
+          },
+          "mlp": {
+            "auroc_mean": 0.7256211587646684,
+            "auroc_std": 0.03739513578166005,
+            "per_fold": {
+              "counting_loop": 0.695990099009901,
+              "alu_heavy": 0.7279032258064516,
+              "branch_heavy": 0.7927927927927928,
+              "mem_intensive": 0.6856621004566209,
+              "irq_test": 0.7257575757575757
+            }
+          }
+        }
+      },
+      "40": {
+        "block_composition": {
+          "window": 16,
+          "baseline": 6,
+          "delta": 18
+        },
+        "exp_a": {
+          "random_forest": {
+            "auroc": 0.8089635854341737,
+            "f1_macro": 0.7108040683170216
+          },
+          "xgboost": {
+            "auroc": 0.7750700280112045,
+            "f1_macro": 0.6970854271356783
+          },
+          "logistic_regression": {
+            "auroc": 0.7904761904761904,
+            "f1_macro": 0.6632724719101124
+          },
+          "mlp": {
+            "auroc": 0.7943977591036415,
+            "f1_macro": 0.719123365146695
+          }
+        },
+        "exp_c": {
+          "random_forest": {
+            "auroc_mean": 0.6866651140433817,
+            "auroc_std": 0.027822386013947986,
+            "per_fold": {
+              "counting_loop": 0.7065841584158417,
+              "alu_heavy": 0.7190322580645161,
+              "branch_heavy": 0.6911711711711712,
+              "mem_intensive": 0.6383561643835616,
+              "irq_test": 0.6781818181818182
+            }
+          },
+          "xgboost": {
+            "auroc_mean": 0.6891337560599163,
+            "auroc_std": 0.03748712176650854,
+            "per_fold": {
+              "counting_loop": 0.702079207920792,
+              "alu_heavy": 0.7474193548387096,
+              "branch_heavy": 0.6801801801801801,
+              "mem_intensive": 0.6311415525114155,
+              "irq_test": 0.6848484848484848
+            }
+          },
+          "logistic_regression": {
+            "auroc_mean": 0.7235724475028388,
+            "auroc_std": 0.05495996448507785,
+            "per_fold": {
+              "counting_loop": 0.6780198019801981,
+              "alu_heavy": 0.7482258064516129,
+              "branch_heavy": 0.8048648648648649,
+              "mem_intensive": 0.6487214611872145,
+              "irq_test": 0.738030303030303
+            }
+          },
+          "mlp": {
+            "auroc_mean": 0.7193606505041471,
+            "auroc_std": 0.05214182912788599,
+            "per_fold": {
+              "counting_loop": 0.6736138613861385,
+              "alu_heavy": 0.71,
+              "branch_heavy": 0.8108108108108107,
+              "mem_intensive": 0.6666210045662101,
+              "irq_test": 0.7357575757575758
+            }
+          }
+        }
+      },
+      "80": {
+        "block_composition": {
+          "window": 28,
+          "baseline": 19,
+          "delta": 33
+        },
+        "exp_a": {
+          "random_forest": {
+            "auroc": 0.815966386554622,
+            "f1_macro": 0.7015250544662309
+          },
+          "xgboost": {
+            "auroc": 0.7711484593837535,
+            "f1_macro": 0.6863248456254769
+          },
+          "logistic_regression": {
+            "auroc": 0.7918767507002802,
+            "f1_macro": 0.6568815889102453
+          },
+          "mlp": {
+            "auroc": 0.7977591036414566,
+            "f1_macro": 0.6738095238095239
+          }
+        },
+        "exp_c": {
+          "random_forest": {
+            "auroc_mean": 0.6881556017349475,
+            "auroc_std": 0.03511138466371083,
+            "per_fold": {
+              "counting_loop": 0.6947524752475247,
+              "alu_heavy": 0.7354838709677419,
+              "branch_heavy": 0.7028828828828829,
+              "mem_intensive": 0.6282648401826484,
+              "irq_test": 0.6793939393939394
+            }
+          },
+          "xgboost": {
+            "auroc_mean": 0.6862908815693167,
+            "auroc_std": 0.043384014647058856,
+            "per_fold": {
+              "counting_loop": 0.6929207920792079,
+              "alu_heavy": 0.7570967741935483,
+              "branch_heavy": 0.6511711711711712,
+              "mem_intensive": 0.6317808219178082,
+              "irq_test": 0.6984848484848485
+            }
+          },
+          "logistic_regression": {
+            "auroc_mean": 0.7133316538697856,
+            "auroc_std": 0.056518154485912,
+            "per_fold": {
+              "counting_loop": 0.6833663366336633,
+              "alu_heavy": 0.7043548387096775,
+              "branch_heavy": 0.8048648648648649,
+              "mem_intensive": 0.6358904109589041,
+              "irq_test": 0.7381818181818183
+            }
+          },
+          "mlp": {
+            "auroc_mean": 0.7295936938524321,
+            "auroc_std": 0.07621464972166668,
+            "per_fold": {
+              "counting_loop": 0.681980198019802,
+              "alu_heavy": 0.6903225806451614,
+              "branch_heavy": 0.8721621621621621,
+              "mem_intensive": 0.6607762557077625,
+              "irq_test": 0.7427272727272728
+            }
+          }
+        }
+      }
+    }
+  }
+}

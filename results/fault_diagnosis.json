@@ -1,0 +1,162 @@
+{
+  "generated": "2026-05-31T20:42:48",
+  "model": "xgboost",
+  "task": "fault_category_diagnosis",
+  "classes": [
+    "ALU",
+    "Control",
+    "Decode",
+    "Memory",
+    "PC",
+    "RegFile"
+  ],
+  "dropped_categories": [
+    "IRQ",
+    "clean"
+  ],
+  "n_train": 454,
+  "n_test": 102,
+  "test_counts": {
+    "ALU": 48,
+    "Control": 5,
+    "Decode": 6,
+    "Memory": 10,
+    "PC": 12,
+    "RegFile": 21
+  },
+  "metrics": {
+    "accuracy": 0.5196078431372549,
+    "f1_macro": 0.4124162926819473,
+    "precision_macro": 0.4330246913580247,
+    "recall_macro": 0.44216269841269834,
+    "auroc_macro": 0.7670797923845653
+  },
+  "per_class_auroc": {
+    "ALU": 0.7501929012345679,
+    "Control": 0.9257731958762887,
+    "Decode": 0.6848958333333334,
+    "Memory": 0.8597826086956522,
+    "PC": 0.7222222222222221,
+    "RegFile": 0.6596119929453264
+  },
+  "bootstrap": {
+    "n_boot": 2000,
+    "seed": 42,
+    "ci_level": 0.95,
+    "method": "percentile bootstrap, test-set case resampling, model fixed",
+    "per_class_auroc_ci": {
+      "ALU": {
+        "lo": 0.647816478170789,
+        "hi": 0.839807879283789,
+        "median": 0.7496608999350227,
+        "n_valid_boot": 2000
+      },
+      "Control": {
+        "lo": 0.8430193298969072,
+        "hi": 0.9849015151515151,
+        "median": 0.9285714285714286,
+        "n_valid_boot": 1987
+      },
+      "Decode": {
+        "lo": 0.3999652777777778,
+        "hi": 0.9595959595959596,
+        "median": 0.6929510155316607,
+        "n_valid_boot": 1999
+      },
+      "Memory": {
+        "lo": 0.7573120529736221,
+        "hi": 0.9415035016141742,
+        "median": 0.8622552478898104,
+        "n_valid_boot": 2000
+      },
+      "PC": {
+        "lo": 0.522424305345817,
+        "hi": 0.8979098747426215,
+        "median": 0.7222524154589374,
+        "n_valid_boot": 2000
+      },
+      "RegFile": {
+        "lo": 0.5217937165894206,
+        "hi": 0.7762005805408582,
+        "median": 0.6594678238428238,
+        "n_valid_boot": 2000
+      }
+    },
+    "macro_auroc_ci": {
+      "lo": 0.6928677450745775,
+      "hi": 0.8385756985719419,
+      "median": 0.7666694098533651,
+      "n_valid_boot": 2000
+    }
+  },
+  "confusion_matrix": [
+    [
+      35,
+      1,
+      2,
+      0,
+      4,
+      6
+    ],
+    [
+      0,
+      3,
+      0,
+      2,
+      0,
+      0
+    ],
+    [
+      4,
+      0,
+      2,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      6,
+      1,
+      3,
+      0,
+      0
+    ],
+    [
+      6,
+      0,
+      0,
+      0,
+      6,
+      0
+    ],
+    [
+      9,
+      0,
+      3,
+      0,
+      5,
+      4
+    ]
+  ],
+  "confusion_matrix_labels": [
+    "ALU",
+    "Control",
+    "Decode",
+    "Memory",
+    "PC",
+    "RegFile"
+  ],
+  "baseline": {
+    "sa_testing": {
+      "description": "Stuck-at pass/fail gives no fault category.",
+      "diagnostic_resolution": "none (binary pass/fail only)",
+      "per_class_auroc": 0.5
+    },
+    "random_guess": {
+      "description": "Uniform guess over 6 categories.",
+      "accuracy": 0.16666666666666666,
+      "per_class_auroc": 0.5
+    }
+  }
+}

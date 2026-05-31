@@ -1,0 +1,251 @@
+{
+  "generated": "2026-05-31T12:05:52.840917",
+  "per_cluster": {
+    "0": {
+      "cluster_name": "universal propagating faults (ALU-dominant)",
+      "cluster_size": 69,
+      "per_workload_coverage": {
+        "counting_loop": 0.9855072463768116,
+        "alu_heavy": 0.5362318840579711,
+        "branch_heavy": 1.0,
+        "mem_intensive": 1.0,
+        "irq_test": 0.8695652173913043
+      },
+      "recommended_workload": "branch_heavy",
+      "single_wl_coverage": 1.0,
+      "all_wl_coverage": 1.0,
+      "test_reduction_ratio": 1.0
+    },
+    "1": {
+      "cluster_name": "memory+branch-sensitive faults",
+      "cluster_size": 25,
+      "per_workload_coverage": {
+        "counting_loop": 0.0,
+        "alu_heavy": 0.0,
+        "branch_heavy": 0.36,
+        "mem_intensive": 0.88,
+        "irq_test": 0.12
+      },
+      "recommended_workload": "mem_intensive",
+      "single_wl_coverage": 0.88,
+      "all_wl_coverage": 1.0,
+      "test_reduction_ratio": 0.88
+    },
+    "2": {
+      "cluster_name": "compute+memory-sensitive faults",
+      "cluster_size": 100,
+      "per_workload_coverage": {
+        "counting_loop": 1.0,
+        "alu_heavy": 0.07,
+        "branch_heavy": 0.0,
+        "mem_intensive": 0.94,
+        "irq_test": 0.01
+      },
+      "recommended_workload": "counting_loop",
+      "single_wl_coverage": 1.0,
+      "all_wl_coverage": 1.0,
+      "test_reduction_ratio": 1.0
+    },
+    "3": {
+      "cluster_name": "ALU-sensitive faults",
+      "cluster_size": 20,
+      "per_workload_coverage": {
+        "counting_loop": 0.05,
+        "alu_heavy": 0.9,
+        "branch_heavy": 0.0,
+        "mem_intensive": 0.1,
+        "irq_test": 0.1
+      },
+      "recommended_workload": "alu_heavy",
+      "single_wl_coverage": 0.9,
+      "all_wl_coverage": 1.0,
+      "test_reduction_ratio": 0.9
+    },
+    "4": {
+      "cluster_name": "branch+compute-sensitive faults",
+      "cluster_size": 33,
+      "per_workload_coverage": {
+        "counting_loop": 1.0,
+        "alu_heavy": 0.0,
+        "branch_heavy": 1.0,
+        "mem_intensive": 0.9696969696969697,
+        "irq_test": 0.0
+      },
+      "recommended_workload": "counting_loop",
+      "single_wl_coverage": 1.0,
+      "all_wl_coverage": 1.0,
+      "test_reduction_ratio": 1.0
+    },
+    "5": {
+      "cluster_name": "architecturally silent ALU faults",
+      "cluster_size": 84,
+      "per_workload_coverage": {
+        "counting_loop": 0.0,
+        "alu_heavy": 0.0,
+        "branch_heavy": 0.0,
+        "mem_intensive": 0.0,
+        "irq_test": 0.0
+      },
+      "recommended_workload": "counting_loop",
+      "single_wl_coverage": 0.0,
+      "all_wl_coverage": 0.0,
+      "test_reduction_ratio": 0.0
+    },
+    "6": {
+      "cluster_name": "architecturally silent PC faults",
+      "cluster_size": 28,
+      "per_workload_coverage": {
+        "counting_loop": 0.0,
+        "alu_heavy": 0.0,
+        "branch_heavy": 0.0,
+        "mem_intensive": 0.0,
+        "irq_test": 0.0
+      },
+      "recommended_workload": "counting_loop",
+      "single_wl_coverage": 0.0,
+      "all_wl_coverage": 0.0,
+      "test_reduction_ratio": 0.0
+    },
+    "7": {
+      "cluster_name": "architecturally silent RegFile faults",
+      "cluster_size": 221,
+      "per_workload_coverage": {
+        "counting_loop": 0.0,
+        "alu_heavy": 0.0,
+        "branch_heavy": 0.0,
+        "mem_intensive": 0.0,
+        "irq_test": 0.0
+      },
+      "recommended_workload": "counting_loop",
+      "single_wl_coverage": 0.0,
+      "all_wl_coverage": 0.0,
+      "test_reduction_ratio": 0.0
+    }
+  },
+  "per_category": {
+    "ALU": {
+      "per_workload_coverage": {
+        "counting_loop": 0.49504950495049505,
+        "alu_heavy": 0.04950495049504951,
+        "branch_heavy": 0.16831683168316833,
+        "mem_intensive": 0.5,
+        "irq_test": 0.16336633663366337
+      },
+      "recommended_workload": "mem_intensive",
+      "single_wl_coverage": 0.5,
+      "all_wl_coverage": 0.5842,
+      "test_reduction_ratio": 0.8559
+    },
+    "Control": {
+      "per_workload_coverage": {
+        "counting_loop": 0.8125,
+        "alu_heavy": 0.75,
+        "branch_heavy": 0.6875,
+        "mem_intensive": 0.8125,
+        "irq_test": 0.6875
+      },
+      "recommended_workload": "counting_loop",
+      "single_wl_coverage": 0.8125,
+      "all_wl_coverage": 0.875,
+      "test_reduction_ratio": 0.9286
+    },
+    "Decode": {
+      "per_workload_coverage": {
+        "counting_loop": 0.6153846153846154,
+        "alu_heavy": 0.46153846153846156,
+        "branch_heavy": 0.6153846153846154,
+        "mem_intensive": 0.6923076923076923,
+        "irq_test": 0.34615384615384615
+      },
+      "recommended_workload": "mem_intensive",
+      "single_wl_coverage": 0.6923,
+      "all_wl_coverage": 0.7308,
+      "test_reduction_ratio": 0.9474
+    },
+    "IRQ": {
+      "per_workload_coverage": {
+        "counting_loop": 0.0,
+        "alu_heavy": 0.0,
+        "branch_heavy": 0.0,
+        "mem_intensive": 0.0,
+        "irq_test": 0.5
+      },
+      "recommended_workload": "irq_test",
+      "single_wl_coverage": 0.5,
+      "all_wl_coverage": 0.5,
+      "test_reduction_ratio": 1.0
+    },
+    "Memory": {
+      "per_workload_coverage": {
+        "counting_loop": 1.0,
+        "alu_heavy": 0.8333333333333334,
+        "branch_heavy": 0.75,
+        "mem_intensive": 1.0,
+        "irq_test": 0.75
+      },
+      "recommended_workload": "counting_loop",
+      "single_wl_coverage": 1.0,
+      "all_wl_coverage": 1.0,
+      "test_reduction_ratio": 1.0
+    },
+    "PC": {
+      "per_workload_coverage": {
+        "counting_loop": 0.5,
+        "alu_heavy": 0.03125,
+        "branch_heavy": 0.5625,
+        "mem_intensive": 0.546875,
+        "irq_test": 0.03125
+      },
+      "recommended_workload": "branch_heavy",
+      "single_wl_coverage": 0.5625,
+      "all_wl_coverage": 0.5625,
+      "test_reduction_ratio": 1.0
+    },
+    "RegFile": {
+      "per_workload_coverage": {
+        "counting_loop": 0.11328125,
+        "alu_heavy": 0.0625,
+        "branch_heavy": 0.01953125,
+        "mem_intensive": 0.15625,
+        "irq_test": 0.0
+      },
+      "recommended_workload": "mem_intensive",
+      "single_wl_coverage": 0.1562,
+      "all_wl_coverage": 0.1797,
+      "test_reduction_ratio": 0.8696
+    }
+  },
+  "global": {
+    "per_workload_coverage": {
+      "counting_loop": 0.3482758620689655,
+      "alu_heavy": 0.10689655172413794,
+      "branch_heavy": 0.19137931034482758,
+      "mem_intensive": 0.3775862068965517,
+      "irq_test": 0.11379310344827587
+    },
+    "best_single_workload": "mem_intensive",
+    "best_single_coverage": 0.3776,
+    "all_workload_coverage": 0.4259,
+    "test_reduction_1_wl": 0.8866,
+    "greedy_cover": {
+      "workload_order": [
+        "mem_intensive",
+        "alu_heavy",
+        "counting_loop",
+        "branch_heavy",
+        "irq_test"
+      ],
+      "cumulative_coverage": [
+        0.8866,
+        0.9514,
+        0.9798,
+        0.9919,
+        1.0
+      ],
+      "total_coverable_sites": 247
+    },
+    "workloads_for_95pct": 1,
+    "interpretation": "Running only 'mem_intensive' achieves 37.8% coverage vs 42.6% exhaustive \u2014 88.7% efficiency. Greedy 2-workload cover reaches 95.1%."
+  },
+  "ate_note": "Recommended workload = single ATE test program achieving highest observable-fault coverage for this fault class. Test reduction ratio = single-workload coverage / all-workload coverage."
+}
