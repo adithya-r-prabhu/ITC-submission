@@ -1,0 +1,115 @@
+{
+  "core": "cv32e40p",
+  "dataset": {
+    "n_total": 1638,
+    "n_clean": 150,
+    "n_faulty": 1488,
+    "n_observable": 329,
+    "n_silent": 1159,
+    "observable_rate": 0.2211021505376344,
+    "workloads": [
+      "alu_heavy",
+      "branch_heavy",
+      "mem_intensive"
+    ],
+    "n_sites": 496,
+    "by_category": {
+      "RegFile": 756,
+      "Control": 222,
+      "IF": 192,
+      "PC": 144,
+      "LSU": 66,
+      "CSR": 66,
+      "EX": 42
+    }
+  },
+  "pre_fault_features": {
+    "max_single_feature_auroc": 0.5559964726631393,
+    "feature_index": 53,
+    "definition": "Single-feature AUROC over the pre-fault aggregate block on the held-out-site binary test set."
+  },
+  "heldout_sites_binary": {
+    "random_forest": {
+      "auroc": 0.654320987654321,
+      "auroc_ci95": [
+        0.5171356853352985,
+        0.7818374785591766
+      ],
+      "f1_macro": 0.5157819225251077,
+      "accuracy": 0.52
+    },
+    "xgboost": {
+      "auroc": 0.6622574955908289,
+      "auroc_ci95": [
+        0.5192960668918896,
+        0.7922732399179767
+      ],
+      "f1_macro": 0.6031746031746031,
+      "accuracy": 0.68
+    },
+    "logistic_regression": {
+      "auroc": 0.6238977072310405,
+      "auroc_ci95": [
+        0.48772011916654767,
+        0.7508179939209727
+      ],
+      "f1_macro": 0.4665718349928876,
+      "accuracy": 0.4666666666666667
+    },
+    "mlp": {
+      "auroc": 0.6432980599647267,
+      "auroc_ci95": [
+        0.4974603750344326,
+        0.7748834454228842
+      ],
+      "f1_macro": 0.5630296610169492,
+      "accuracy": 0.7066666666666667
+    }
+  },
+  "heldout_sites_binary_window_delta_only": {
+    "random_forest": {
+      "auroc": 0.6666666666666666,
+      "auroc_ci95": [
+        0.5340022641831852,
+        0.790477016404648
+      ],
+      "f1_macro": 0.5052594045284364,
+      "accuracy": 0.5066666666666667
+    },
+    "xgboost": {
+      "auroc": 0.6631393298059964,
+      "auroc_ci95": [
+        0.5191910608583056,
+        0.7950263157894736
+      ],
+      "f1_macro": 0.6031746031746031,
+      "accuracy": 0.6666666666666666
+    },
+    "logistic_regression": {
+      "auroc": 0.6256613756613757,
+      "auroc_ci95": [
+        0.49111689814814813,
+        0.7534977532679739
+      ],
+      "f1_macro": 0.4658119658119658,
+      "accuracy": 0.4666666666666667
+    },
+    "mlp": {
+      "auroc": 0.5978835978835979,
+      "auroc_ci95": [
+        0.4409169071669072,
+        0.7449131736027744
+      ],
+      "f1_macro": 0.4186046511627907,
+      "accuracy": 0.72
+    }
+  },
+  "heldout_sites_binary_test_set": {
+    "n_total": 75,
+    "n_clean": 21,
+    "n_observable": 54
+  },
+  "scope": {
+    "site_set": "CV32E40P generated sites target FF register file mem[x], IF/PC _q flops, LSU/control/CSR/EX _q flops; combinational datapath wires excluded."
+  }
+}

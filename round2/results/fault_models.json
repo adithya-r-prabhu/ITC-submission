@@ -1,0 +1,53 @@
+{
+  "n_sites": 580,
+  "n_positions": 8,
+  "n_workloads": 5,
+  "duration": 4,
+  "period": 40,
+  "models": {
+    "stuck_at": {
+      "n_sites": 580,
+      "observable_sites": 247,
+      "site_observable_rate": 0.4259,
+      "silent_site_rate": 0.5741,
+      "sample_observable_frac": 0.2273,
+      "mean_first_div_latency": 28.92
+    },
+    "transient": {
+      "n_sites": 580,
+      "observable_sites": 241,
+      "site_observable_rate": 0.4155,
+      "silent_site_rate": 0.5845,
+      "sample_observable_frac": 0.1005,
+      "mean_first_div_latency": 17.04
+    },
+    "delay": {
+      "n_sites": 580,
+      "observable_sites": 197,
+      "site_observable_rate": 0.3397,
+      "silent_site_rate": 0.6603,
+      "sample_observable_frac": 0.0611,
+      "mean_first_div_latency": 24.24
+    },
+    "intermittent": {
+      "n_sites": 580,
+      "observable_sites": 247,
+      "site_observable_rate": 0.4259,
+      "silent_site_rate": 0.5741,
+      "sample_observable_frac": 0.1889,
+      "mean_first_div_latency": 66.24
+    },
+    "bridging": {
+      "n_sites": 580,
+      "observable_sites": 314,
+      "site_observable_rate": 0.5414,
+      "silent_site_rate": 0.4586,
+      "sample_observable_frac": 0.3133,
+      "mean_first_div_latency": 27.42
+    }
+  },
+  "denominators": {
+    "site_observable_rate": "Sites observable in at least one injection.",
+    "sample_observable_frac": "Observable individual injections."
+  }
+}

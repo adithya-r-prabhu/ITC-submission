@@ -1,0 +1,187 @@
+{
+  "selection_protocol": "Greedy forward selection and budget selection on five-fold training-split cross-validation.",
+  "bus_features": 156,
+  "ordering": [
+    "reg_out",
+    "alu_out",
+    "reg_pc",
+    "wrdata",
+    "rs1",
+    "rs2",
+    "rd",
+    "regwrite",
+    "trap"
+  ],
+  "steps": [
+    {
+      "step": 0,
+      "added": "bus",
+      "signals": [],
+      "cv_auroc": 0.6604,
+      "test_auroc": 0.8132,
+      "n_features": 156,
+      "extract_cells": 0,
+      "monitor_cells": 2760,
+      "total_cells": 2760
+    },
+    {
+      "step": 1,
+      "added": "reg_out",
+      "signals": [
+        "reg_out"
+      ],
+      "cv_auroc": 0.7651,
+      "test_auroc": 0.8669,
+      "n_features": 160,
+      "extract_cells": 471,
+      "monitor_cells": 2753,
+      "total_cells": 3224
+    },
+    {
+      "step": 2,
+      "added": "alu_out",
+      "signals": [
+        "reg_out",
+        "alu_out"
+      ],
+      "cv_auroc": 0.8045,
+      "test_auroc": 0.9085,
+      "n_features": 164,
+      "extract_cells": 942,
+      "monitor_cells": 2793,
+      "total_cells": 3735
+    },
+    {
+      "step": 3,
+      "added": "reg_pc",
+      "signals": [
+        "reg_out",
+        "alu_out",
+        "reg_pc"
+      ],
+      "cv_auroc": 0.8232,
+      "test_auroc": 0.9122,
+      "n_features": 168,
+      "extract_cells": 1413,
+      "monitor_cells": 2780,
+      "total_cells": 4193
+    },
+    {
+      "step": 4,
+      "added": "wrdata",
+      "signals": [
+        "reg_out",
+        "alu_out",
+        "reg_pc",
+        "wrdata"
+      ],
+      "cv_auroc": 0.8302,
+      "test_auroc": 0.9125,
+      "n_features": 172,
+      "extract_cells": 1884,
+      "monitor_cells": 2802,
+      "total_cells": 4686
+    },
+    {
+      "step": 5,
+      "added": "rs1",
+      "signals": [
+        "reg_out",
+        "alu_out",
+        "reg_pc",
+        "wrdata",
+        "rs1"
+      ],
+      "cv_auroc": 0.8308,
+      "test_auroc": 0.9074,
+      "n_features": 176,
+      "extract_cells": 2355,
+      "monitor_cells": 2821,
+      "total_cells": 5176
+    },
+    {
+      "step": 6,
+      "added": "rs2",
+      "signals": [
+        "reg_out",
+        "alu_out",
+        "reg_pc",
+        "wrdata",
+        "rs1",
+        "rs2"
+      ],
+      "cv_auroc": 0.8324,
+      "test_auroc": 0.9081,
+      "n_features": 180,
+      "extract_cells": 2826,
+      "monitor_cells": 2892,
+      "total_cells": 5718
+    },
+    {
+      "step": 7,
+      "added": "rd",
+      "signals": [
+        "reg_out",
+        "alu_out",
+        "reg_pc",
+        "wrdata",
+        "rs1",
+        "rs2",
+        "rd"
+      ],
+      "cv_auroc": 0.8335,
+      "test_auroc": 0.9088,
+      "n_features": 184,
+      "extract_cells": 3297,
+      "monitor_cells": 2859,
+      "total_cells": 6156
+    },
+    {
+      "step": 8,
+      "added": "regwrite",
+      "signals": [
+        "reg_out",
+        "alu_out",
+        "reg_pc",
+        "wrdata",
+        "rs1",
+        "rs2",
+        "rd",
+        "regwrite"
+      ],
+      "cv_auroc": 0.8307,
+      "test_auroc": 0.9094,
+      "n_features": 188,
+      "extract_cells": 3768,
+      "monitor_cells": 2906,
+      "total_cells": 6674
+    },
+    {
+      "step": 9,
+      "added": "trap",
+      "signals": [
+        "reg_out",
+        "alu_out",
+        "reg_pc",
+        "wrdata",
+        "rs1",
+        "rs2",
+        "rd",
+        "regwrite",
+        "trap"
+      ],
+      "cv_auroc": 0.8286,
+      "test_auroc": 0.9071,
+      "n_features": 192,
+      "extract_cells": 4239,
+      "monitor_cells": 2870,
+      "total_cells": 7109
+    }
+  ],
+  "signals_for_95pct_of_gain": 3,
+  "k95_selection_curve": "train_cv",
+  "k95_test_auroc": 0.9122,
+  "k95_test_gain": 0.099,
+  "full_trace_buffer_gain": 0.0939,
+  "knee_signal": "reg_out"
+}

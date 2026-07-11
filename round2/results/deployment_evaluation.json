@@ -1,0 +1,82 @@
+{
+  "method": "Group-disjoint five-fold out-of-fold scores over all binary samples; isotonic-calibrated random forest; recall at specified false-positive rates with a 2,000-replicate cluster bootstrap.",
+  "channels": {
+    "bus": {
+      "oof_auroc": 0.7099,
+      "n_neg": 250,
+      "recall_at_fpr": {
+        "0.01": {
+          "target_fpr": 0.01,
+          "recall": 0.2152,
+          "achieved_fpr": 0.008,
+          "recall_ci95": [
+            0.1058,
+            0.2791
+          ],
+          "estimable": true
+        },
+        "0.05": {
+          "target_fpr": 0.05,
+          "recall": 0.3227,
+          "achieved_fpr": 0.048,
+          "recall_ci95": [
+            0.24,
+            0.3935
+          ],
+          "estimable": true
+        },
+        "0.10": {
+          "target_fpr": 0.1,
+          "recall": 0.3788,
+          "achieved_fpr": 0.1,
+          "recall_ci95": [
+            0.3131,
+            0.4656
+          ],
+          "estimable": true
+        }
+      }
+    },
+    "bus_plus_internal_trace": {
+      "oof_auroc": 0.8639,
+      "n_neg": 250,
+      "recall_at_fpr": {
+        "0.01": {
+          "target_fpr": 0.01,
+          "recall": 0.2182,
+          "achieved_fpr": 0.008,
+          "recall_ci95": [
+            0.1089,
+            0.394
+          ],
+          "estimable": true
+        },
+        "0.05": {
+          "target_fpr": 0.05,
+          "recall": 0.5576,
+          "achieved_fpr": 0.048,
+          "recall_ci95": [
+            0.3904,
+            0.715
+          ],
+          "estimable": true
+        },
+        "0.10": {
+          "target_fpr": 0.1,
+          "recall": 0.7242,
+          "achieved_fpr": 0.1,
+          "recall_ci95": [
+            0.655,
+            0.7713
+          ],
+          "estimable": true
+        }
+      }
+    }
+  },
+  "internal_trace_minus_bus_recall_gain": {
+    "0.01": 0.003,
+    "0.05": 0.2349,
+    "0.10": 0.3454
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "workload": "alu_heavy",
+  "samples": 5000,
+  "tvla": {
+    "max_abs_t": 100.48279865608632,
+    "peak_sample": 578,
+    "samples_above_4_5": 4309,
+    "shortest_energy_window": {
+      "start": 165,
+      "end": 2356,
+      "length": 2192
+    }
+  },
+  "univariate_auroc": {
+    "max": 0.999609375,
+    "peak_sample": 2338,
+    "samples_above_0_9": 2442,
+    "shortest_energy_window": {
+      "start": 17,
+      "end": 3770,
+      "length": 3754
+    }
+  },
+  "energy_fraction": 0.9
+}

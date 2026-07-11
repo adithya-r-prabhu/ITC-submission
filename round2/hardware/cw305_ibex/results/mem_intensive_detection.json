@@ -1,0 +1,18 @@
+{
+  "workload": "mem_intensive",
+  "n_clean_traces": 50,
+  "n_fault_trials": 256,
+  "n_unique_sites": 128,
+  "repetitions_per_site": 2.0,
+  "architectural_result_divergence_rate": 0.0,
+  "architectural_result_divergence_count": 0,
+  "divergence_rate_by_group": {
+    "instruction": 0.0,
+    "load_data": 0.0,
+    "sa0": 0.0,
+    "sa1": 0.0
+  },
+  "power_trace_auroc_grouped_cv": 1.0,
+  "tvla_max_abs_t": 124.73775482177734,
+  "tvla_samples_above_4_5": 3697
+}

@@ -1,0 +1,102 @@
+{
+  "protocol": {
+    "benches": [
+      "coremark",
+      "dhrystone"
+    ],
+    "positions": [
+      5000,
+      50000,
+      95000,
+      140000,
+      185000,
+      230000,
+      275000,
+      320000
+    ],
+    "obs_horizon_cycles": 2000,
+    "total_cycles": 400000,
+    "mem_words": 65536,
+    "firmware": "CoreMark (EEMBC, vendored; ITERATIONS=1, rv32i + soft muldiv) and Dhrystone (riscv-tests; 20 runs)"
+  },
+  "per_bench": {
+    "coremark": {
+      "n_sites": 580,
+      "observable_sites": 438,
+      "site_observable_rate": 0.7552,
+      "site_observable_rate_480cy_horizon_control": 0.7034,
+      "median_first_div_cycles": 55,
+      "by_category_observable": {
+        "ALU": 178,
+        "Control": 14,
+        "Decode": 22,
+        "IRQ": 0,
+        "Memory": 12,
+        "PC": 43,
+        "RegFile": 169
+      }
+    },
+    "dhrystone": {
+      "n_sites": 580,
+      "observable_sites": 420,
+      "site_observable_rate": 0.7241,
+      "site_observable_rate_480cy_horizon_control": 0.719,
+      "median_first_div_cycles": 75,
+      "by_category_observable": {
+        "ALU": 163,
+        "Control": 14,
+        "Decode": 22,
+        "IRQ": 0,
+        "Memory": 12,
+        "PC": 42,
+        "RegFile": 167
+      }
+    }
+  },
+  "union": {
+    "short_workload_observable_sites": 247,
+    "extended_workload_observable_sites": 392,
+    "extended_plus_benchmark_observable_sites": 478,
+    "new_sites_from_benchmarks_over_ext8": {
+      "coremark": 84,
+      "dhrystone": 74
+    },
+    "short_workload_silent_rate": 0.5741,
+    "extended_workload_silent_rate": 0.3241,
+    "extended_plus_benchmark_silent_rate": 0.1759
+  },
+  "short_workload_to_benchmark_transfer": {
+    "coremark": {
+      "training_distribution_scaler": {
+        "random_forest": 0.4093,
+        "xgboost": 0.3604,
+        "logistic_regression": 0.5744,
+        "mlp": 0.3916
+      },
+      "clean_calibrated": {
+        "random_forest": 0.6445,
+        "xgboost": 0.638,
+        "logistic_regression": 0.627,
+        "mlp": 0.6249
+      },
+      "n_clean": 40,
+      "n_observable": 438
+    },
+    "dhrystone": {
+      "training_distribution_scaler": {
+        "random_forest": 0.4652,
+        "xgboost": 0.4321,
+        "logistic_regression": 0.3632,
+        "mlp": 0.3235
+      },
+      "clean_calibrated": {
+        "random_forest": 0.6547,
+        "xgboost": 0.3711,
+        "logistic_regression": 0.4016,
+        "mlp": 0.5117
+      },
+      "n_clean": 40,
+      "n_observable": 420
+    }
+  }
+}

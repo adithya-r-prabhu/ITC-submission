@@ -1,0 +1,46 @@
+{
+  "task": "Held-out-site binary clean-versus-observable classification",
+  "window": 40,
+  "n_test": 137,
+  "tiers": {
+    "bus": {
+      "auroc": 0.8168,
+      "auroc_ci95": [
+        0.7274,
+        0.8919
+      ],
+      "auprc": 0.9302,
+      "n_features": 156
+    },
+    "+counters": {
+      "auroc": 0.8779,
+      "auroc_ci95": [
+        0.8095,
+        0.9392
+      ],
+      "auprc": 0.9608,
+      "n_features": 161
+    },
+    "internal_toggle_features": {
+      "auroc": 0.8703,
+      "auroc_ci95": [
+        0.794,
+        0.935
+      ],
+      "auprc": 0.9536,
+      "n_features": 170
+    },
+    "internal_trace": {
+      "auroc": 0.9168,
+      "auroc_ci95": [
+        0.859,
+        0.9641
+      ],
+      "auprc": 0.973,
+      "n_features": 206
+    }
+  },
+  "auroc_gain_counters": 0.0611,
+  "auroc_gain_internal_toggle_features": 0.0535,
+  "auroc_gain_internal_trace": 0.1
+}

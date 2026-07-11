@@ -1,0 +1,18 @@
+{
+  "workload": "alu_heavy",
+  "n_clean_traces": 50,
+  "n_fault_trials": 256,
+  "n_unique_sites": 128,
+  "repetitions_per_site": 2.0,
+  "architectural_result_divergence_rate": 0.90625,
+  "architectural_result_divergence_count": 232,
+  "divergence_rate_by_group": {
+    "instruction": 0.8125,
+    "load_data": 1.0,
+    "sa0": 0.90625,
+    "sa1": 0.90625
+  },
+  "power_trace_auroc_grouped_cv": 0.9893749999999999,
+  "tvla_max_abs_t": 100.48287963867188,
+  "tvla_samples_above_4_5": 4309
+}

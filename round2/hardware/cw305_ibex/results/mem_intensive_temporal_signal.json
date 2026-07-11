@@ -1,0 +1,25 @@
+{
+  "workload": "mem_intensive",
+  "samples": 5000,
+  "tvla": {
+    "max_abs_t": 124.73810856547533,
+    "peak_sample": 1918,
+    "samples_above_4_5": 3697,
+    "shortest_energy_window": {
+      "start": 237,
+      "end": 2398,
+      "length": 2162
+    }
+  },
+  "univariate_auroc": {
+    "max": 1.0,
+    "peak_sample": 757,
+    "samples_above_0_9": 2065,
+    "shortest_energy_window": {
+      "start": 25,
+      "end": 3348,
+      "length": 3324
+    }
+  },
+  "energy_fraction": 0.9
+}

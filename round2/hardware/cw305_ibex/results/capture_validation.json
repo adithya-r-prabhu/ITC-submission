@@ -1,0 +1,41 @@
+{
+  "alu_heavy_stuckat_35t.npz": {
+    "workload": "alu_heavy",
+    "clean_traces": 50,
+    "fault_traces": 256,
+    "samples": 5000,
+    "minimum": -0.25390625,
+    "maximum": 0.12109375,
+    "adc_step_estimate": 0.0009765625,
+    "adc_step_matches_10_bit_grid": true,
+    "identical_to_first_trace_in_first_50": 0,
+    "mean_trace_variance": 0.000431945780769937,
+    "required_fields_present": true
+  },
+  "branch_heavy_stuckat_35t.npz": {
+    "workload": "branch_heavy",
+    "clean_traces": 50,
+    "fault_traces": 256,
+    "samples": 5000,
+    "minimum": -0.2451171875,
+    "maximum": 0.115234375,
+    "adc_step_estimate": 0.0009765625,
+    "adc_step_matches_10_bit_grid": true,
+    "identical_to_first_trace_in_first_50": 0,
+    "mean_trace_variance": 0.0003111465430452199,
+    "required_fields_present": true
+  },
+  "mem_intensive_stuckat_35t.npz": {
+    "workload": "mem_intensive",
+    "clean_traces": 50,
+    "fault_traces": 256,
+    "samples": 5000,
+    "minimum": -0.25390625,
+    "maximum": 0.1005859375,
+    "adc_step_estimate": 0.0009765625,
+    "adc_step_matches_10_bit_grid": true,
+    "identical_to_first_trace_in_first_50": 0,
+    "mean_trace_variance": 0.00017765152027526606,
+    "required_fields_present": true
+  }
+}

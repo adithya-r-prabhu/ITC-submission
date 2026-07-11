@@ -1,0 +1,25 @@
+{
+  "workload": "branch_heavy",
+  "samples": 5000,
+  "tvla": {
+    "max_abs_t": 80.1590859893554,
+    "peak_sample": 2182,
+    "samples_above_4_5": 2122,
+    "shortest_energy_window": {
+      "start": 141,
+      "end": 2243,
+      "length": 2103
+    }
+  },
+  "univariate_auroc": {
+    "max": 1.0,
+    "peak_sample": 377,
+    "samples_above_0_9": 1301,
+    "shortest_energy_window": {
+      "start": 234,
+      "end": 2419,
+      "length": 2186
+    }
+  },
+  "energy_fraction": 0.9
+}

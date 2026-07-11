@@ -1,0 +1,36 @@
+{
+  "train_workloads": [
+    "alu_heavy",
+    "branch_heavy",
+    "mem_intensive"
+  ],
+  "test_workloads": [
+    "alu_heavy",
+    "branch_heavy",
+    "mem_intensive"
+  ],
+  "auroc_matrix": [
+    [
+      0.9893749999999999,
+      0.21117187499999998,
+      0.69421875
+    ],
+    [
+      0.7035156250000001,
+      0.99984375,
+      0.996328125
+    ],
+    [
+      0.9459375,
+      0.8442187500000001,
+      1.0
+    ]
+  ],
+  "within_workload_grouped_cv": [
+    0.9893749999999999,
+    0.99984375,
+    1.0
+  ],
+  "cross_workload_mean": 0.7325651041666666,
+  "cross_workload_min": 0.21117187499999998
+}

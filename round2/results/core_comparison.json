@@ -1,0 +1,54 @@
+{
+  "description": "Three-core portability comparison. Same methodology, feature pipeline, splits, and models on three structurally distinct RISC-V cores.",
+  "cores": [
+    {
+      "core": "PicoRV32",
+      "microarchitecture": "multi-cycle FSM",
+      "n_sites": 580,
+      "n_workloads": 5,
+      "n_faulty": 2900,
+      "observable_rate_sample": 0.2276,
+      "silent_rate_sample": 0.7724,
+      "site_observable_rate": 0.4259,
+      "site_silent_rate": 0.5741,
+      "heldout_site_auroc": 0.8126,
+      "model": "mlp",
+      "ml_auroc_ci95": null,
+      "pre_fault_feature_auroc": 0.5254
+    },
+    {
+      "core": "Ibex",
+      "microarchitecture": "2-stage pipeline",
+      "n_sites": 166,
+      "n_workloads": 4,
+      "n_faulty": 664,
+      "observable_rate_sample": 0.3042,
+      "silent_rate_sample": 0.6958,
+      "site_observable_rate": 0.494,
+      "site_silent_rate": 0.506,
+      "heldout_site_auroc": 0.6603,
+      "model": "random_forest",
+      "ml_auroc_ci95": null,
+      "pre_fault_feature_auroc": 0.5962
+    },
+    {
+      "core": "CV32E40P",
+      "microarchitecture": "4-stage pipeline",
+      "n_sites": 496,
+      "n_workloads": 3,
+      "n_faulty": 1488,
+      "observable_rate_sample": 0.2211,
+      "silent_rate_sample": 0.7789,
+      "site_observable_rate": 0.3871,
+      "site_silent_rate": 0.6129,
+      "heldout_site_auroc": 0.6623,
+      "model": "xgboost",
+      "ml_auroc_ci95": [
+        0.5192960668918896,
+        0.7922732399179767
+      ],
+      "pre_fault_feature_auroc": 0.556
+    }
+  ],
+  "site_sets_are_core_specific": true
+}

@@ -1,0 +1,87 @@
+{
+  "core": "ibex",
+  "dataset": {
+    "n_total": 864,
+    "n_clean": 200,
+    "n_faulty": 664,
+    "n_observable": 202,
+    "n_silent": 462,
+    "observable_rate": 0.3042,
+    "silent_rate": 0.6958,
+    "workloads": [
+      "alu_heavy",
+      "branch_heavy",
+      "hello_test",
+      "mem_intensive"
+    ],
+    "n_sites": 166,
+    "per_workload_observable_rate": {
+      "alu_heavy": 0.2169,
+      "branch_heavy": 0.2771,
+      "hello_test": 0.3373,
+      "mem_intensive": 0.3855
+    },
+    "by_category": {
+      "RegFile": 512,
+      "Control": 80,
+      "PC": 64,
+      "Decode": 8
+    }
+  },
+  "pre_fault_features": {
+    "max_single_feature_auroc": 0.5962099125364431
+  },
+  "heldout_sites_binary": {
+    "random_forest": {
+      "auroc": 0.6603498542274052,
+      "f1_macro": 0.6225490196078431,
+      "accuracy": 0.6623376623376623
+    },
+    "xgboost": {
+      "auroc": 0.6537900874635568,
+      "f1_macro": 0.5722222222222222,
+      "accuracy": 0.5844155844155844
+    },
+    "logistic_regression": {
+      "auroc": 0.6450437317784257,
+      "f1_macro": 0.6181818181818182,
+      "accuracy": 0.6883116883116883
+    },
+    "mlp": {
+      "auroc": 0.5849125364431486,
+      "f1_macro": 0.5853846153846154,
+      "accuracy": 0.6363636363636364
+    }
+  },
+  "heldout_sites_summary": {
+    "model": "random_forest",
+    "auroc": 0.6603498542274052,
+    "n_test_obs": 49,
+    "n_test_clean": 28
+  },
+  "ate_cover": {
+    "n_coverable_sites": 82,
+    "per_workload_coverage": {
+      "alu_heavy": 0.439,
+      "branch_heavy": 0.561,
+      "hello_test": 0.6829,
+      "mem_intensive": 0.7805
+    },
+    "single_workload": "mem_intensive",
+    "single_workload_coverage": 0.7805,
+    "greedy_order": [
+      "mem_intensive",
+      "hello_test",
+      "branch_heavy"
+    ],
+    "greedy_cumulative": [
+      0.7805,
+      0.9268,
+      1.0
+    ]
+  },
+  "dataset_definition": {
+    "sites": "Ibex fault set = 166 flip-flop sites (RF x1-x8 + PC/fetch buffers + controller FSM/flag flops + one decoder flop), spanning RegFile/PC/Control/Decode, vs PicoRV32 580 architectural sites. Narrower, frequently-used-register-biased base; ALU/decode datapath is combinational (not a forceable flip-flop) so cannot be category-matched.",
+    "workloads": "irq_test not ported to Ibex (needs IRQ port + handler); 4 workloads vs PicoRV32 5."
+  }
+}

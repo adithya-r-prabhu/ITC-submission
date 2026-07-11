@@ -1,0 +1,26 @@
+{
+  "observation_window_core_cycles": 600,
+  "per_workload": {
+    "alu_heavy": {
+      "architectural_result_divergence_rate": 0.90625,
+      "architectural_result_divergence_count": 232,
+      "n_fault_trials": 256,
+      "power_trace_auroc_grouped_cv": 0.9893749999999999,
+      "golden_result": 0
+    },
+    "branch_heavy": {
+      "architectural_result_divergence_rate": 0.0,
+      "architectural_result_divergence_count": 0,
+      "n_fault_trials": 256,
+      "power_trace_auroc_grouped_cv": 0.99984375,
+      "golden_result": 0
+    },
+    "mem_intensive": {
+      "architectural_result_divergence_rate": 0.0,
+      "architectural_result_divergence_count": 0,
+      "n_fault_trials": 256,
+      "power_trace_auroc_grouped_cv": 1.0,
+      "golden_result": 0
+    }
+  }
+}
